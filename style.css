@@ -123,9 +123,9 @@ li {
   width: 50px;
   height: 50px;
 
-  display: flex; /* faz com q seja uma div flex, sem isso n da pra fazer os 2 de baixo */
-  justify-content: center; /* alinha horizontalmente */
-  align-items: center; /* alinha verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background: #323238;
 
@@ -152,11 +152,3 @@ li {
   width: 36px;
   height: 36px;
 }
-
-#userURL {
-}
-
-/*  
-  Math-Senpai: sla deixa como gostou
-  Joseph-Onii-chan: e assim, pra fazer uma versão de desktop? tipo, olha tela
-*/
