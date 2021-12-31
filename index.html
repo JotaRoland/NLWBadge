@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <main>
       <div class="content">
@@ -22,38 +23,54 @@
           <span>
             <img src="imagens/seloRocketseat.svg" alt="Rocketseat tag" />
           </span>
+
           <img
             src="https://picsum.photos/500/500?blur"
             alt="Profile Picture"
             id="userPFP"
           />
         </div>
+
         <h1 id="userName">Lorem Ipsum</h1>
-        <a id="userURL" href="https://github.com" target="_blank">
+
+        <a
+          id="userURL"
+          class="github-badge"
+          href="https://github.com"
+          target="_blank"
+        >
           <img src="imagens/github.svg" alt="Github Icon" />
           <span id="userLogin">LoremIpsum</span>
         </a>
+
         <p id="userBio">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
+
         <ul id="socialLinks">
           <li class="twitter">
-            <a href="https://twitter.com" target="_blank">
-              <img src="imagens/Group 6421.svg" alt="Twitter Icon" />
-            </a>
+            <div class="social-link-btn">
+              <a href="https://twitter.com" target="_blank">
+                <img src="imagens/twitter-brands.svg" alt="Twitter Icon" />
+              </a>
+            </div>
           </li>
+
           <li class="instagram">
-            <a href="https://www.instagram.com" target="_blank">
-              <img
-                id="instagramIcon"
-                src="imagens/instaIcon.png"
-                alt="Instagram Icon"
-              />
-            </a>
+            <div class="social-link-btn">
+              <a href="https://www.instagram.com" target="_blank">
+                <img
+                  id="instagramIcon"
+                  src="imagens/instagram-brands.svg"
+                  alt="Instagram Icon"
+                />
+              </a>
+            </div>
           </li>
         </ul>
       </div>
     </main>
+
     <script src="scripts.js"></script>
   </body>
 </html>

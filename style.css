@@ -10,15 +10,34 @@ body {
 }
 
 body {
+  background: url(imagens/backgroundGradient.svg) no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #202024;
+  background-color: #303036;
+
+  overflow: hidden;
 }
 
 main {
-  background: url(imagens/background.png);
+  background: url(imagens/background.png) no-repeat center;
   width: 375px;
   height: 812px;
+}
+
+/* @media (min-width: 1280px) {
+  main {
+    background: url(imagens/desktopStripe.svg);
+    width: 358px;
+    height: 540px;
+  }
+} */
+
+@media (max-width: 420px) {
+  body {
+    background-color: #202024;
+  }
 }
 
 .content {
@@ -48,6 +67,16 @@ main {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 
+.github-badge {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.github-badge span {
+  margin-top: 2px;
+}
+
 h1 {
   font-size: 1.5rem;
   color: white;
@@ -55,12 +84,19 @@ h1 {
 }
 
 a {
+  margin: 0;
+  padding: 0;
   color: #c4c4cc;
   text-decoration: none;
   margin-top: 0.25rem;
   display: flex;
   gap: 0.75rem;
   justify-content: center;
+}
+
+a:hover,
+a:active {
+  color: white;
 }
 
 p {
@@ -76,3 +112,51 @@ ul {
   gap: 0.5rem;
   justify-content: center;
 }
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.social-link-btn {
+  padding: 0 3px 3px 3px;
+  width: 50px;
+  height: 50px;
+
+  display: flex; /* faz com q seja uma div flex, sem isso n da pra fazer os 2 de baixo */
+  justify-content: center; /* alinha horizontalmente */
+  align-items: center; /* alinha verticalmente */
+
+  background: #323238;
+
+  transition: 0.2s;
+}
+
+.social-link-btn img {
+  width: 30px;
+  height: 30px;
+
+  transition: 0.25s;
+}
+
+.social-link-btn > img > svg {
+  fill: white;
+}
+
+.social-link-btn:hover,
+.social-link-btn:active {
+  background: #44444d;
+}
+
+.social-link-btn:hover img {
+  width: 36px;
+  height: 36px;
+}
+
+#userURL {
+}
+
+/*  
+  Math-Senpai: sla deixa como gostou
+  Joseph-Onii-chan: e assim, pra fazer uma versão de desktop? tipo, olha tela
+*/
