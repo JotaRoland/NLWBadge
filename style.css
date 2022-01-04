@@ -16,8 +16,7 @@ body {
   display: grid;
   place-items: center;
   background-color: #303036;
-
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 main {
